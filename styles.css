@@ -1,0 +1,307 @@
+/* CSS BY SOPHIA BROUGHTON */
+
+/* IMPORTED FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
+
+/* CSS REST */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ROOT VARIABLES */
+
+:root {
+    --teal:#4CA7C0;
+    --purple:#484FB7;
+    --lavender:#6B8FE7;
+    --yellow:#E9BB57; 
+    --pink:#D9526F;
+    --dk-gray:#1E1E1E; 
+    --white:#ffffff; 
+
+
+}
+
+body{
+    background-color: var(--lavender);
+    margin: 0 auto;
+    max-width: 450px;
+}
+
+header{
+    background-color: var(--purple);
+    color: var(--white);
+    text-align: center;
+    padding: 40px;
+
+}
+
+h1, h2{
+    font-family: 'Kavoon', sans-serif;
+}
+
+h1{
+    font-size: 3em;
+    margin-bottom: 10px;
+  
+}
+
+h2{
+    font-size: 2em;
+}
+
+nav h2{
+    font-size: 1.5em;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+
+
+  
+}
+
+h3{
+    font-size: 1.5em;
+    font-family: 'Inter', sans-serif;
+
+}
+
+h4{
+    font-size: 1.15em;
+    font-family: 'Inter', sans-serif;
+
+}
+
+p{
+    font-size: .5em;
+    font-family: 'Inter', sans-serif;
+
+}
+
+nav {
+    background-color: var(--yellow);
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    font-family: 'Inter', sans-serif;
+
+}
+
+nav a{
+    display: block;
+    background-color: var(--white);
+    color: var(--purple);
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    font-weight: bold;
+}
+
+nav li{
+    font-size: .75em;
+}
+section{
+    max-width: 450px;
+    margin: 0 auto;
+}
+#services {
+    background-color: var(--purple);
+    padding: 10px;
+}
+#services h2 {
+    color: var(--white);
+}
+
+#services h3{
+    color: var(--yellow);
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+}
+
+#services h2, h3{
+    padding: 10px 10px 0 10px;
+}
+
+#services div{
+    background-color: var(--white);
+    display: block;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+}
+
+#services div img {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 10px auto;
+}
+
+#services div h4{
+    color: var(--purple);
+    font-weight: bold;
+    padding: 10px;
+}
+
+#services div p{
+    color: var(--dk-gray);
+    padding: 10px;
+}
+
+#choose {
+    background-color: var(--pink);
+    padding: 10px;
+}
+
+#choose h2 {
+    color: var(--white);
+    padding: 10px;
+}
+
+#choose ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    list-style-type: none;
+    justify-content: center;
+}
+
+#choose li{ 
+    background-color: var(--white);
+    color: var(--dk-gray);
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-size: .5em;
+}
+
+#choose li:nth-child(1){
+    background-color: var(--teal);
+}
+
+#choose li:nth-child(2) {
+    background-color: var(--lavender);
+}
+
+#choose li:nth-child(3){
+    background-color: var(--yellow);
+}
+
+#prices {
+    background-color: var(--purple);
+    padding: 10px;
+}
+
+#prices h2{
+    color: var(--white);
+    padding: 10px;
+}
+
+#prices h3 {
+    color:var(--yellow);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#prices h2, h3{ 
+    padding: 10px 10px 0 10px;
+}
+
+#prices table {
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    color: var(--dk-gray);
+    background-color: var(--yellow);
+    font-family: 'Inter', sans-serif;
+}
+
+#prices th {
+    padding: 15px;
+    font-weight: bold;
+}
+
+#prices td{
+    background-color: var(--white);
+    padding: 10px;
+    border: var(--yellow) solid 4px;
+}
+
+.schedule {
+    background-color: var(--pink);
+    padding: 10px;
+}
+
+.schedule h2 {
+    color: var(--white);
+    padding: 10px;
+}
+
+.schedule p {
+    color: var(--white);
+    margin: 10px;
+}
+
+.schedule a {
+    background-color: var(--white);
+    color: var(--dk-gray);
+    text-decoration: none;
+    font-weight: bold;
+    display:block;
+    text-align: center;
+    margin:10px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 6px 8px 8px var(--dk-gray) ;
+}
+
+.terms {
+    background-color: var(--purple);
+    color: var(--white);
+    padding: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.terms a{
+    color: var(--white);
+}
